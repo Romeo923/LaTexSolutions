@@ -1,0 +1,33 @@
+\documentclass{article} % \documentclass{} is the first command in any LaTeX code.  It is used to define what kind of document 
+
+\usepackage{amsmath} % \usepackage is a command that allows you to add functionality to your LaTeX code            
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage[margin=0.75in,footskip=0.25in]{geometry}
+
+\title{Math215} % Sets article title
+
+\author{Homework 7, Problem 3} % Sets authors name
+\date{\today} 
+
+\begin{document} % All begin commands must be paired with an end command somewhere                    
+\maketitle % creates title using infromation in preamble (title, author, date)
+\section*{11.3 Problem 9} % creates a section
+\begin{equation*}
+  f(x,t) = e^{-t}cos(\pi x)
+\end{equation*}
+\begin{displaymath}
+  f_{x}(x,t) = e^{-t}\frac{\partial}{\partial x}(cos(\pi x)) = e^{-t} \pi (-sin(\pi x)) = -\pi e^{-t}sin(\pi x)
+\end{displaymath}
+\begin{displaymath}
+  f_t(x,t) = cos(\pi x) \frac{\partial}{\partial x}(e^{-t}) = cos(\pi x)(-1)e^{-t} = -e^{-t}cos(\pi x)
+\end{displaymath}
+\\
+\begin{equation}
+  f_{x}(x,t) = -\pi e^{-t}sin(\pi x)
+\end{equation}
+\begin{equation}
+  f_t(x,t) = -e^{-t}cos(\pi x)
+\end{equation}
+  
+\end{document}
